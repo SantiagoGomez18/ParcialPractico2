@@ -17,6 +17,9 @@ export class AnimeService {
     return this.http.get<Anime[]>(this.apiUrl);
   }
 
+
+
+
   getAnime(id: string): Observable<Anime> {
     return this.http.get<Anime[]>(this.apiUrl).pipe(
       map((animes: Anime[]) => {
